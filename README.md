@@ -12,7 +12,7 @@ Selenium: https://www.selenium.dev/downloads/
 
 #Grupo
 <ul>
-Rafael Martins Silva
+<li>Rafael Martins Silva<li>
 Matheus Henrique Ribeiro da Silva
 Leonardo Henrique
 Amanda Batista
