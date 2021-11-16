@@ -6,9 +6,9 @@ Criar 3 exemplos de testes com o Selenium (diferente do exemplo apresentado pelo
 # Instalação
 É necessario instalar o Selenium e o arquivo ChromeDrive compativel com o seu navegador
 
-ChromeDriver: https://chromedriver.chromium.org/
+<li>ChromeDriver: https://chromedriver.chromium.org/
 
-Selenium: https://www.selenium.dev/downloads/
+<li>Selenium: https://www.selenium.dev/downloads/
 
 #Grupo
 <ul>
