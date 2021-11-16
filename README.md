@@ -3,6 +3,8 @@
 
 Criar 3 exemplos de testes com o Selenium (diferente do exemplo apresentado pelo professor).
 
+##Atividades estão dentro da pasta "src/atividadefelipe"
+
 # Instalação
 É necessario instalar o Selenium e o arquivo ChromeDrive compativel com o seu navegador
 
