@@ -11,10 +11,10 @@ ChromeDriver: https://chromedriver.chromium.org/
 Selenium: https://www.selenium.dev/downloads/
 
 #Grupo
-Rafael Martins Silva
-Matheus Henrique Ribeiro da Silva
-Leonardo Henrique
-Amanda Batista
-David Jacobis Furtado
-Natan Gonçalves de Almeida
-Gustavo Cristhian Almeida Silva
+*Rafael Martins Silva
+*Matheus Henrique Ribeiro da Silva
+*Leonardo Henrique
+*Amanda Batista
+*David Jacobis Furtado
+*Natan Gonçalves de Almeida
+*Gustavo Cristhian Almeida Silva
