@@ -13,10 +13,10 @@ Selenium: https://www.selenium.dev/downloads/
 #Grupo
 <ul>
 <li>Rafael Martins Silva<li>
-Matheus Henrique Ribeiro da Silva
-Leonardo Henrique
-Amanda Batista
-David Jacobis Furtado
-Natan Gonçalves de Almeida
-Gustavo Cristhian Almeida Silva
+<li>Matheus Henrique Ribeiro da Silva<li>
+<li>Leonardo Henrique<li>
+<li>Amanda Batista<li>
+<li>David Jacobis Furtado<li>
+<li>Natan Gonçalves de Almeida<li>
+<li>Gustavo Cristhian Almeida Silva<li>
 <ul>
