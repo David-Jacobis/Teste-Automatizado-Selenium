@@ -4,30 +4,27 @@
  * and open the template in the editor.
  */
 package atividade.felipe;
+import java.io.File;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import java.io.File;
+import org.openqa.selenium.chrome.ChromeDriver;
 /**
  *
  * @author David
  */
 public class Segundo_teste {
     public static void main(String[] args) {
-WebDriver driver = new HtmlUnitDriver();
 
-driver.get("http://www.google.com");
+        File file = new File("C:\\Users\\David\\Downloads\\chromedriver_win32\\chromedriver.exe"); //Coloque o caminho para o seu chromedrive
+        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+        WebDriver driver = new ChromeDriver();
 
-WebElement element = driver.findElement(By.name("q"));
+        driver.get("https://www.google.com.br/");
+        WebElement element = driver.findElement(By.name("q"));
+        element.sendKeys("Como realizar teste com Selenium");
+        element.submit(); // Pesquisa Selenium no google
 
-element.sendKeys("Vai se Vai se Vai se tratar garota!");
-
-element.submit();
-
-System.out.println("O título da página é: " + driver.getTitle());
-
-driver.close();
+        driver.close();
 }
 }

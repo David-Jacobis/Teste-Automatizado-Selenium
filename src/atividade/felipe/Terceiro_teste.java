@@ -5,13 +5,9 @@
  */
 package atividade.felipe;
 import java.io.File;
-import java.util.List;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 /**
  *
@@ -19,24 +15,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 public class Terceiro_teste {
     public static void main(String[] args) {
-WebDriver driver = new ChromeDriver();
-driver.get("http://www.google.com/webhp?complete=1&hl=en");
+        File file = new File("C:\\Users\\David\\Downloads\\chromedriver_win32\\chromedriver.exe"); //Coloque o caminho para o seu chromedrive
+        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+           String login = "YOUR_LOGIN";
+    String password = "YOUR_PASSWORD";
 
-WebElement query = driver.findElement(By.name("q"));
-query.sendKeys("macaco");
+       WebDriver driver = new ChromeDriver();
 
-long end = System.currentTimeMillis() + 5000;
-while (System.currentTimeMillis() < end) {
-WebElement resultsDiv = driver.findElement(By.className("sbdd_b"));
+       driver.get("https://www.facebook.com/");
 
-if (resultsDiv.isDisplayed()) {
-break;
-}
-}
-List<WebElement> allSuggestions = driver.findElements(By.xpath("//div[@class='sbqs_c']"));
+       driver.findElement(By.id("email")).sendKeys(login);
+       driver.findElement(By.id("pass")).sendKeys(password);
 
-for (WebElement suggestion : allSuggestions) {
-System.out.println(suggestion.getText());
-}
+       driver.findElement(By.name("login")).click();
     }
 }

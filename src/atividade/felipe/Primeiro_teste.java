@@ -5,7 +5,6 @@
  */
 package atividade.felipe;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,16 +18,24 @@ public class Primeiro_teste {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-     abrirChrome();
+    public static void main(String[] args) throws Exception {
+     File file = new File("C:\\Users\\David\\Downloads\\chromedriver_win32\\chromedriver.exe"); //Coloque o caminho para o seu chromedrive
+        System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+        WebDriver driver = new ChromeDriver();
+        driver.get("http://www.google.com/webhp?complete=1&hl=en");
+
+        WebElement query = driver.findElement(By.name("q"));
+        query.sendKeys("Executando teste com selenium");
+
+        long end = System.currentTimeMillis() + 5000;
+        while (System.currentTimeMillis() < end) {
+            WebElement resultsDiv = driver.findElement(By.className("UUbT9"));
+
+            if (resultsDiv.isDisplayed()) {
+                break;
+            }
     }
-        private static void abrirChrome() {
-    File file = new File("/Users/David/Downloads/chromedriver_win32/chromedriver.exe");
-    System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
-    WebDriver driver = new ChromeDriver();
-    driver.get("https://github.com/David-Jacobis");
-    String i = driver.getCurrentUrl();
-    System.out.println(i);
-    driver.close();
-        }
+        
+    }
 }
+
