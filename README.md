@@ -16,7 +16,7 @@ Selenium: https://www.selenium.dev/downloads/
 Matheus Henrique Ribeiro da Silva
 <li>Leonardo Henrique<li>
 Amanda Batista
-<li>David Jacobis Furtado<li>
+<li>David Jacobis Furtado
 <li>Natan Gonçalves de Almeida<li>
 Gustavo Cristhian Almeida Silva
 <ul>
